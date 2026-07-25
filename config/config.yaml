@@ -1,0 +1,83 @@
+project:
+  name: FHIR_ETL
+  environment: Local
+
+api:
+  base_url: https://hapi.fhir.org/baseR4
+  timeout: 30
+  page_size: 500
+
+
+load_time:
+  initial_load_date: 2026-07-01
+  incremental_time: None
+
+resources:
+  - Patient
+  - Encounter
+  - Observation
+  - Condition
+
+storage:
+  base_path: .data/
+  raw_path: .data/raw
+  bronze_path: .data/bronze
+  silver_path: .data/silver
+  gold_path: .data/gold
+
+logging:
+  level: INFO
+  log_path: ./logs
+
+
+resource_mappings:
+  Patient:
+    target_table: silver_patient
+    business_key: patient_id
+    columns:
+      patient_id: id
+      active: active
+      gender: gender
+      address: address 
+      country: address[0].country
+      birth_date: birthDate
+      resourceType: resourceType
+
+
+  Encounter:
+    target_table: silver_encounter
+    business_key: encounter_id
+    columns:
+      encounter_id: id
+      status: status
+      class: class.code
+      start_date: period.start
+      end_date: period.end
+      patient_reference: subject.reference
+      resourceType: resourceType
+
+
+  Observation:
+    target_table: silver_observation
+    business_key: observation_id
+    columns:
+      observation_id: id
+      status: status
+      observation_code: code.text
+      effective_datetime: effectiveDateTime
+      patient_reference: subject.reference
+      encounter_reference: encounter.reference
+      resourceType: resourceType
+
+
+  Condition:
+    target_table: silver_condition
+    business_key: condition_id
+    columns:
+      condition_id: id
+      patient_reference: subject.reference
+      encounter_reference: encounter.reference
+      condition: code.text
+      onset_datetime: onsetDateTime
+      clinicalStatus: clinicalStatus.text
+      resourceType: resourceType
