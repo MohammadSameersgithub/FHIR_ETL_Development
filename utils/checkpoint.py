@@ -9,8 +9,8 @@ class CheckpointManager:
     def __init__(self):
         self.checkpoint_path = Path(__file__).resolve().parents[1] / "data/checkpoint/"
         self.checkpoint_file = self.checkpoint_path / "checkpoint.json"
-        self.logger = LoggerFactory()
-        self.logger = self.logger.get_logger(__name__)
+        logger = LoggerFactory()
+        self.logger = logger.get_logger(__name__)
 
     def _load(self):
         self.checkpoint_path.mkdir(parents=True, exist_ok=True)

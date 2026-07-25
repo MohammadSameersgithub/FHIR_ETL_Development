@@ -19,11 +19,11 @@ resources:
   - Condition
 
 storage:
-  base_path: .data/
-  raw_path: .data/raw
-  bronze_path: .data/bronze
-  silver_path: .data/silver
-  gold_path: .data/gold
+  base_path: data/
+  raw_path: data/raw
+  bronze_path: data/bronze
+  silver_path: data/silver
+  gold_path: data/gold
 
 logging:
   level: INFO

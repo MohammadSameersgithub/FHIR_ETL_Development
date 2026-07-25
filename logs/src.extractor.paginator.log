@@ -1,0 +1,16 @@
+2026-07-25 18:51:30 | INFO     | src.extractor.paginator | paginator:fetch_pages:26 | https://hapi.fhir.org/baseR4/Observation 
+ response status code: 200
+2026-07-25 19:15:21 | INFO     | src.extractor.paginator | paginator:fetch_pages:26 | https://hapi.fhir.org/baseR4/Observation 
+ response status code: 200
+2026-07-25 19:15:39 | INFO     | src.extractor.paginator | paginator:fetch_pages:26 | https://hapi.fhir.org/baseR4/Observation 
+ response status code: 200
+2026-07-25 19:19:30 | INFO     | src.extractor.paginator | paginator:fetch_pages:26 | https://hapi.fhir.org/baseR4/Observation 
+ response status code: 200
+2026-07-25 19:20:20 | INFO     | src.extractor.paginator | paginator:fetch_pages:26 | https://hapi.fhir.org/baseR4/Observation 
+ response status code: 200
+2026-07-25 19:20:37 | INFO     | src.extractor.paginator | paginator:fetch_pages:26 | https://hapi.fhir.org/baseR4/Observation 
+ response status code: 200
+2026-07-25 19:22:39 | INFO     | src.extractor.paginator | paginator:fetch_pages:26 | https://hapi.fhir.org/baseR4/Observation 
+ response status code: 200
+2026-07-25 19:24:12 | INFO     | src.extractor.paginator | paginator:fetch_pages:26 | https://hapi.fhir.org/baseR4/Observation 
+ response status code: 200
