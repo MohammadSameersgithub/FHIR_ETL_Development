@@ -12,43 +12,69 @@ class CheckpointManager:
         logger = LoggerFactory()
         self.logger = logger.get_logger(__name__)
 
-    def _load(self):
+    def load(self):
+
         self.checkpoint_path.mkdir(parents=True, exist_ok=True)
 
         if not self.checkpoint_file.exists():
             self.logger.info("Checkpoint not found. Creating a new checkpoint.")
             checkpoint = {}
-            with self.checkpoint_file.open('w', encoding="utf-8") as file:
-                json.dump(checkpoint, file, indent=4)
+            self._write_checkpoint(checkpoint)
             return checkpoint
         
-        else:
+        try:
             with self.checkpoint_file.open("r", encoding="utf-8") as file:
                 checkpoint = json.load(file)
+
+            if not isinstance(checkpoint, dict):
+                raise ValueError("Checkpoint must be a JSON object.")
+
             return checkpoint
 
-    def save(self, resource, last_successful_page):
+        except (json.JSONDecodeError, ValueError) as error:
+            self.logger.error(
+                f"Invalid checkpoint file: {error}")
+            raise
 
-        checkpoint = self._load()
+    def save(self, resource, checkpoint, last_successful_page, 
+                    total_records, status, last_successful_watermark=None):
+        
+        self.checkpoint_path.mkdir(parents=True, exist_ok=True)
+
         self.logger.info("Checkpoint loaded")
-        checkpoint[resource] = {
+
+        existing_checkpoint = checkpoint.get(resource,{})
+
+        checkpoint_data = {
             "last_successful_page" : last_successful_page,
-            "last_successfull_timestamp" : datetime.now(UTC).isoformat(),
-            "status" : "RUNNING"
-            }
-        with self.checkpoint_file.open("w", encoding="utf-8") as file:
-            json.dump(checkpoint, file, indent=4)
-        self.logger.info("Checkpoint saved successfully")
+            "total_records" : total_records,
+            "status" : status }
 
-    def update_progress(self, resource, last_successful_page):
+        existing_watermark = existing_checkpoint.get("last_successful_watermark")
 
-        checkpoint = self._load()
-        self.logger.info("Checkpoint loaded")
-        checkpoint[resource] = {
-            "last_successful_page": last_successful_page,
-            "last_extraction_timestamp" : datetime.now(UTC).isoformat(),
-            "status" : "COMPLETED"
-            }
-        with self.checkpoint_file.open("w", encoding="utf-8") as file:
+        if last_successful_watermark is not None:
+            checkpoint_data["last_successful_watermark"] = last_successful_watermark
+
+        elif existing_watermark is not None:
+            checkpoint_data["last_successful_watermark"] = existing_watermark
+
+        checkpoint[resource] = checkpoint_data
+
+        self._write_checkpoint(checkpoint)
+
+        self.logger.info(
+            f"Checkpoint saved successfully for resource: "
+            f"{resource} | "
+            f"status: {status} | "
+            f"last successful page: {last_successful_page}"
+        )
+
+    ## atomic writes to avoid corrupted checkpoints
+    def _write_checkpoint(self, checkpoint):
+        temp_file = self.checkpoint_file.with_suffix(".tmp")
+
+        with temp_file.open("w", encoding="utf-8") as file:
             json.dump(checkpoint, file, indent=4)
-        self.logger.info("Checkpoint updated successfully")
+
+        temp_file.replace(self.checkpoint_file)
+

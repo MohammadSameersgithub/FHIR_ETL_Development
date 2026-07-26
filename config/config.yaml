@@ -6,11 +6,7 @@ api:
   base_url: https://hapi.fhir.org/baseR4
   timeout: 30
   page_size: 500
-
-
-load_time:
-  initial_load_date: 2026-07-01
-  incremental_time: None
+  initial_load_date: '2026-07-21'
 
 resources:
   - Patient
@@ -27,7 +23,7 @@ storage:
 
 logging:
   level: INFO
-  log_path: ./logs
+  log_path: logs
 
 
 resource_mappings:

@@ -1,7 +1,8 @@
 {
     "Patient": {
-        "last_successful_page": 3,
-        "last_extraction_timestamp": "2026-07-25T13:21:29.519114+00:00",
-        "status": "COMPLETED"
+        "last_successful_page": 6,
+        "total_records": 0,
+        "status": "COMPLETED",
+        "last_successful_watermark": "2026-07-26T07:45:26.964770+00:00"
     }
 }
