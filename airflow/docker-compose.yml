@@ -1,0 +1,173 @@
+version: '3.8'
+
+
+services:
+
+
+  postgres:
+
+    image: postgres:15
+
+    environment:
+
+      POSTGRES_USER: airflow
+
+      POSTGRES_PASSWORD: airflow
+
+      POSTGRES_DB: airflow
+
+    ports:
+
+      - "5432:5432"
+
+
+
+  airflow-init:
+
+    build: .
+
+    depends_on:
+
+      - postgres
+
+
+    env_file:
+
+      - .env
+
+
+    environment:
+
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+
+      - ../config:/opt/airflow/project/config
+      - ../src:/opt/airflow/project/src
+      - ../utils:/opt/airflow/project/utils
+      - ../data:/opt/airflow/project/data
+      - ../logs:/opt/airflow/project/logs
+
+
+    command: >
+
+      bash -c "
+
+      airflow db migrate &&
+
+      airflow users create
+
+      --username admin
+
+      --firstname Admin
+
+      --lastname User
+
+      --role Admin
+
+      --email admin@example.com
+
+      --password admin
+
+      "
+
+
+
+  airflow-webserver:
+
+
+    build: .
+
+
+    depends_on:
+
+      - postgres
+
+
+    env_file:
+
+      - .env
+
+
+    ports:
+
+      - "8080:8080"
+
+
+    environment:
+
+
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+
+
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+
+
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+
+      - ../config:/opt/airflow/project/config
+      - ../src:/opt/airflow/project/src
+      - ../utils:/opt/airflow/project/utils
+      - ../data:/opt/airflow/project/data
+      - ../logs:/opt/airflow/project/logs
+
+
+
+    command: webserver
+
+
+
+
+  airflow-scheduler:
+
+
+    build: .
+
+
+    depends_on:
+
+
+      - airflow-webserver
+
+
+    env_file:
+
+
+      - .env
+
+
+
+    environment:
+
+
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+
+
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+
+
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+
+      - ../config:/opt/airflow/project/config
+      - ../src:/opt/airflow/project/src
+      - ../utils:/opt/airflow/project/utils
+      - ../data:/opt/airflow/project/data
+      - ../logs:/opt/airflow/project/logs
+
+
+
+    command: scheduler
