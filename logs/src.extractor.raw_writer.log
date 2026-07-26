@@ -1,18 +1,48 @@
-2026-07-26 13:12:51 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
-2026-07-26 13:12:51 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00001.json
-2026-07-26 13:12:51 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00001.json
-2026-07-26 13:12:53 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
-2026-07-26 13:12:53 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00002.json
-2026-07-26 13:12:53 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00002.json
-2026-07-26 13:12:56 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
-2026-07-26 13:12:56 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00003.json
-2026-07-26 13:12:56 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00003.json
-2026-07-26 13:12:56 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
-2026-07-26 13:12:56 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00004.json
-2026-07-26 13:12:56 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00004.json
-2026-07-26 13:15:10 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
-2026-07-26 13:15:10 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00005.json
-2026-07-26 13:15:10 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00005.json
-2026-07-26 13:15:28 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
-2026-07-26 13:15:28 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00006.json
-2026-07-26 13:15:28 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00006.json
+2026-07-26 20:14:20 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
+2026-07-26 20:14:20 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00001.json
+2026-07-26 20:14:20 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00001.json
+2026-07-26 20:14:22 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
+2026-07-26 20:14:22 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00002.json
+2026-07-26 20:14:22 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00002.json
+2026-07-26 20:14:23 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
+2026-07-26 20:14:23 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00003.json
+2026-07-26 20:14:24 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00003.json
+2026-07-26 20:14:24 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
+2026-07-26 20:14:24 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00004.json
+2026-07-26 20:14:24 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00004.json
+2026-07-26 20:14:35 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
+2026-07-26 20:14:35 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00005.json
+2026-07-26 20:14:35 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00005.json
+2026-07-26 14:48:04 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:48:04 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00001.json
+2026-07-26 14:48:04 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00001.json
+2026-07-26 14:48:05 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:48:05 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00002.json
+2026-07-26 14:48:06 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00002.json
+2026-07-26 14:48:07 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:48:07 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00003.json
+2026-07-26 14:48:07 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00003.json
+2026-07-26 14:48:08 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:48:08 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00004.json
+2026-07-26 14:48:08 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00004.json
+2026-07-26 20:25:37 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
+2026-07-26 20:25:37 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00005.json
+2026-07-26 20:25:37 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00005.json
+2026-07-26 20:25:51 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26
+2026-07-26 20:25:51 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00006.json
+2026-07-26 20:25:51 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00006.json
+2026-07-26 14:56:30 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:56:30 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00001.json
+2026-07-26 14:56:30 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00001.json
+2026-07-26 14:56:32 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:56:32 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00002.json
+2026-07-26 14:56:32 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00002.json
+2026-07-26 14:56:34 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:56:34 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00003.json
+2026-07-26 14:56:34 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00003.json
+2026-07-26 14:56:34 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:56:34 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00004.json
+2026-07-26 14:56:34 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00004.json
+2026-07-26 14:59:37 | INFO     | src.extractor.raw_writer | raw_writer:write:20 | writing the file to /opt/airflow/project/data/raw/Patient/2026-07-26
+2026-07-26 14:59:37 | INFO     | src.extractor.raw_writer | raw_writer:write:22 | writing /opt/airflow/project/data/raw/Patient/2026-07-26/page_00005.json
+2026-07-26 14:59:37 | INFO     | src.extractor.raw_writer | raw_writer:write:25 | successfully written the file /opt/airflow/project/data/raw/Patient/2026-07-26/page_00005.json

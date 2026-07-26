@@ -37,7 +37,7 @@ class CheckpointManager:
             raise
 
     def save(self, resource, checkpoint, last_successful_page, 
-                    total_records, status, last_successful_watermark=None):
+                    total_records, records_in_run, status, last_successful_watermark=None):
         
         self.checkpoint_path.mkdir(parents=True, exist_ok=True)
 
@@ -48,6 +48,7 @@ class CheckpointManager:
         checkpoint_data = {
             "last_successful_page" : last_successful_page,
             "total_records" : total_records,
+            "records_in_run" : records_in_run,
             "status" : status }
 
         existing_watermark = existing_checkpoint.get("last_successful_watermark")

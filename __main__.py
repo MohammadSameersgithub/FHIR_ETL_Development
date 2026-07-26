@@ -46,4 +46,3 @@ extract = extract.run(resource = 'Patient')
 # print(type(bundle))
 # print(len(bundle.get('entry',[])))
 # print(len(response.get('entry').get('resource')))
-

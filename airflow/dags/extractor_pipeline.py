@@ -96,9 +96,10 @@ def api_call(**context):
         key="checkpoint")
     resource_checkpoint = checkpoint.get(resource)
     last_successful_page = resource_checkpoint.get("last_successful_page",0)
+    total_records = resource_checkpoint.get("total_records",0)
 
     page_number = last_successful_page + 1 
-    total_records = 0
+    records_in_run = 0
     file_path = None
     extraction_start_timestamp = datetime.now(UTC).isoformat()
     try:
@@ -107,10 +108,12 @@ def api_call(**context):
                                 bundle = bundle, 
                                 page_number = page_number)
             records_in_page = len(bundle.get("entry",[]))
+            records_in_run += records_in_page
             total_records += records_in_page
             page_number+=1
         checkpoint[resource] = {"last_successful_page":page_number - 1,
                                 "total_records": total_records,
+                                "records_in_run":records_in_run,
                                 "status":"COMPLETED",
                                 "last_successful_watermark" : extraction_start_timestamp }
 
@@ -120,6 +123,7 @@ def api_call(**context):
     except Exception as error:
         checkpoint[resource] = {"last_successful_page":page_number - 1,
                                 "total_records": total_records,
+                                "records_in_run":records_in_run,
                                 "status":"FAILED",
                                 "last_successful_watermark" : extraction_start_timestamp }
         ti.xcom_push(
@@ -140,6 +144,7 @@ def checkpoint_save(**context):
                             checkpoint = checkpoint,
                             last_successful_page = resource_checkpoint['last_successful_page'],
                             total_records = resource_checkpoint['total_records'],
+                            records_in_run = resource_checkpoint['records_in_run'],
                             status = resource_checkpoint['status'],
                             last_successful_watermark = resource_checkpoint['last_successful_watermark'])
 

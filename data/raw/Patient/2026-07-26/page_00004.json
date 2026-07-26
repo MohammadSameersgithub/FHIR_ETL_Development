@@ -1,19 +1,19 @@
 {
     "resourceType": "Bundle",
-    "id": "3131b6c3-7bf7-4d9d-b680-921b7f7f002a",
+    "id": "fb72c330-6c07-4bad-96c9-7c8c6b38ee12",
     "meta": {
-        "lastUpdated": "2026-07-26T03:42:52.202-04:00"
+        "lastUpdated": "2026-07-26T10:56:30.072-04:00"
     },
     "type": "searchset",
-    "total": 1510,
+    "total": 1532,
     "link": [
         {
             "relation": "self",
-            "url": "https://hapi.fhir.org/baseR4?_getpages=3131b6c3-7bf7-4d9d-b680-921b7f7f002a&_getpagesoffset=1500&_count=500&_pretty=true&_bundletype=searchset"
+            "url": "https://hapi.fhir.org/baseR4?_getpages=fb72c330-6c07-4bad-96c9-7c8c6b38ee12&_getpagesoffset=1500&_count=500&_pretty=true&_bundletype=searchset"
         },
         {
             "relation": "previous",
-            "url": "https://hapi.fhir.org/baseR4?_getpages=3131b6c3-7bf7-4d9d-b680-921b7f7f002a&_getpagesoffset=1000&_count=500&_pretty=true&_bundletype=searchset"
+            "url": "https://hapi.fhir.org/baseR4?_getpages=fb72c330-6c07-4bad-96c9-7c8c6b38ee12&_getpagesoffset=1000&_count=500&_pretty=true&_bundletype=searchset"
         }
     ],
     "entry": [
@@ -421,6 +421,788 @@
                 ],
                 "gender": "male",
                 "birthDate": "1965-03-11"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230518",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230518",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T04:33:52.767-04:00",
+                    "source": "#wuVxEnSkmZ8jb0aM"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf1111 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf1111",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf1111"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230517"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230516"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230522",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230522",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T04:38:00.316-04:00",
+                    "source": "#uJuypEduxXKPQcdv"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf111 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf111",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf111"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230521"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230520"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230527",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230527",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T04:43:14.811-04:00",
+                    "source": "#oVNd2u9KovDPjaYp"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf11 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf11",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf11"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230525"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230526"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230533",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230533",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T04:48:21.583-04:00",
+                    "source": "#VPOZmISTnBwuet3B"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf1111 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf1111",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf1111"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230532"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230529"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230537",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230537",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T04:54:04.006-04:00",
+                    "source": "#WT7N68p20TgI9m9m"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf11111 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf11111",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf11111"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230536"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230534"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230541",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230541",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T05:02:09.847-04:00",
+                    "source": "#qSJ5EiPFzSP3PpTr"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf2323 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf2323",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf2323"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230540"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230539"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230545",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230545",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T05:10:10.267-04:00",
+                    "source": "#RH9LrK26cGPattwX"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf23 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf23",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf23"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230544"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230543"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230549",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230549",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T05:19:44.200-04:00",
+                    "source": "#7c1286a52VomXCt8"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf24 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf24",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf24"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230548"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230547"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230551",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230551",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T05:29:12.979-04:00",
+                    "source": "#dYAsDHPs6cwTYeNC"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>mh-ms1lj9d1-7xu0tv52</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://mindharbor.tw/fhir/patient-id",
+                        "value": "mh-ms1lj9d1-7xu0tv52"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "\u856d\u6e38"
+                    }
+                ],
+                "gender": "male"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230557",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230557",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T05:31:50.745-04:00",
+                    "source": "#iwqUzg86dtGQqmUc"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf000 <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf000",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf000"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230556"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230555"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230566",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230566",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T05:42:44.657-04:00",
+                    "source": "#PPaZpp6XXzxKu6Yw"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcftest <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcftest",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcftest"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230565"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230564"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230571",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230571",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T05:44:55.103-04:00",
+                    "source": "#mcDjewxCvzYlqwBk"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcfyesy <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcfyesy",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcfyesy"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230570"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230569"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230598",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230598",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T08:20:03.930-04:00",
+                    "source": "#yc4bTckxYYImI6mT"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Jonas <b>ANDERSSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Date of birth</td><td><span>01 January 1979</span></td></tr></tbody></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "family": "Andersson",
+                        "given": [
+                            "Jonas"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1979-01-01"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230601",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230601",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T08:47:14.102-04:00",
+                    "source": "#KBDtnznLlDTuaGQp"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u6bcf\u6bcf <b>\u738b </b></div><table class=\"hapiPropertyTable\"><tbody/></table></div>"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "text": "\u738b\u6bcf\u6bcf",
+                        "family": "\u738b",
+                        "given": [
+                            "\u6bcf\u6bcf"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/137230599"
+                    }
+                ],
+                "managingOrganization": {
+                    "reference": "Organization/137230600"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230602",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230602",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T10:28:01.911-04:00",
+                    "source": "#7seWKxemI9y7TBsu"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u963f\u83ca <b>\u9673 </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L223365979</td></tr><tr><td>Date of birth</td><td><span>12 May 1946</span></td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "https://www.mohw.gov.tw/",
+                        "value": "L223365979"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "\u9673",
+                        "given": [
+                            "\u963f\u83ca"
+                        ]
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1946-05-12"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230608",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230608",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T10:46:13.856-04:00",
+                    "source": "#h9ozpJZtX9XHa8mX"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>mh-ms1wuyd2-i6g4ufwd</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://mindharbor.tw/fhir/patient-id",
+                        "value": "mh-ms1wuyd2-i6g4ufwd"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "\u4efb\u52d9\u6e2c\u8a66"
+                    }
+                ],
+                "gender": "male"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230611",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230611",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T10:47:10.269-04:00",
+                    "source": "#REY7Rxi8i30jVuKd"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>mh-ms1ww642-8pqgn1oq</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://mindharbor.tw/fhir/patient-id",
+                        "value": "mh-ms1ww642-8pqgn1oq"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "\u4efb\u52d9\u6e2c\u8a66"
+                    }
+                ],
+                "gender": "male"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230613",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230613",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T10:49:08.712-04:00",
+                    "source": "#bduargE3J7jBbMTo"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>mh-ms1wypi0-62kthiay</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://mindharbor.tw/fhir/patient-id",
+                        "value": "mh-ms1wypi0-62kthiay"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "\u91cf\u8868\u6e2c\u8a66"
+                    }
+                ],
+                "gender": "male"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230616",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230616",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T10:50:47.539-04:00",
+                    "source": "#efSkAc3LPL7yr9FM"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>mh-ms1x0tr9-abz8bg4y</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://mindharbor.tw/fhir/patient-id",
+                        "value": "mh-ms1x0tr9-abz8bg4y"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "\u91cf\u8868\u6e2c\u8a66"
+                    }
+                ],
+                "gender": "male"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230619",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230619",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T10:52:14.716-04:00",
+                    "source": "#6KRl52HtHmIzqh4x"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>mh-ms1x2p0y-lt560lwv</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://mindharbor.tw/fhir/patient-id",
+                        "value": "mh-ms1x2p0y-lt560lwv"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "\u91cf\u8868\u6e2c\u8a66"
+                    }
+                ],
+                "gender": "male"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230626",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230626",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T10:53:39.505-04:00",
+                    "source": "#BTqmjnzPy3SOzGDB"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>mh-ms1x4igf-3ontk7tf</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://mindharbor.tw/fhir/patient-id",
+                        "value": "mh-ms1x4igf-3ontk7tf"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "\u91cf\u8868\u6e2c\u8a66"
+                    }
+                ],
+                "gender": "male"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://hapi.fhir.org/baseR4/Patient/137230633",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "137230633",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2026-07-26T10:54:57.715-04:00",
+                    "source": "#3JaWGYEqKqoMj2t6"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>mh-ms1x66sj-z13dr01x</td></tr></tbody></table></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://mindharbor.tw/fhir/patient-id",
+                        "value": "mh-ms1x66sj-z13dr01x"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "\u91cf\u8868\u6e2c\u8a66"
+                    }
+                ],
+                "gender": "male"
             },
             "search": {
                 "mode": "match"

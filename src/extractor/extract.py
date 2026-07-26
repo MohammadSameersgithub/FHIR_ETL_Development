@@ -29,6 +29,7 @@ class Extractor:
 
         last_successful_watermark = resource_checkpoint.get("last_successful_watermark")
         last_successful_page = resource_checkpoint.get("last_successful_page",0)
+        total_records = resource_checkpoint.get("total_records",0)
 
         if last_successful_watermark is None:
             params = {"_count": self.page_size,
@@ -48,8 +49,8 @@ class Extractor:
                                 f"{last_successful_watermark}"
                             )
 
-        page_number = last_successful_page + 1 
-        total_records = 0
+        page_number = last_successful_page +1 
+        records_in_run = 0 
         file_path = None
         try:
             for bundle in self.paginator.fetch_pages(resource = resource, params = params):
@@ -57,12 +58,13 @@ class Extractor:
                                     bundle = bundle, 
                                     page_number = page_number)
                 records_in_page = len(bundle.get("entry",[]))
+                records_in_run += records_in_page
                 total_records += records_in_page
-
                 self.logger.info(
                                 f"Resource: {resource} | "
                                 f"Page: {page_number} | "
                                 f"Records in page: {records_in_page} | "
+                                f"Records in run: {records_in_run} | "
                                 f"Total records: {total_records} | "
                                 f"File: {file_path}"
                             )
@@ -72,13 +74,15 @@ class Extractor:
                         checkpoint=checkpoint,
                         last_successful_page=page_number - 1,
                         total_records=total_records,
+                        records_in_run = records_in_run,
                         status="COMPLETED",
                         last_successful_watermark=extraction_start_timestamp )
 
             self.logger.info(
                         f"Resource {resource} extraction completed "
                         f"successfully. "
-                        f"Total records: {total_records}")
+                        f"Total records: {total_records} "
+                        f"Records in run: {records_in_run}")
 
         except Exception as error:
             self.checkpoint_manager.save(
@@ -86,13 +90,16 @@ class Extractor:
                         checkpoint=checkpoint,
                         last_successful_page=page_number - 1,
                         total_records=total_records,
+                        records_in_run=records_in_run,
                         status="FAILED")
 
             self.logger.exception(
                         f"Resource {resource} extraction failed. "
                         f"Last successful page: "
                         f"{page_number - 1} | "
-                        f"Total records processed: "
+                        f"Total records processed so far: "
                         f"{total_records} | "
+                        f"Total records processed in run: "
+                        f"{records_in_run} | "
                         f"Last file: {file_path}")
             raise

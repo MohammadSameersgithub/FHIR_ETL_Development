@@ -1,8 +1,9 @@
 {
     "Patient": {
-        "last_successful_page": 6,
-        "total_records": 0,
+        "last_successful_page": 4,
+        "total_records": 1504,
+        "records_in_run": 1504,
         "status": "COMPLETED",
-        "last_successful_watermark": "2026-07-26T07:45:26.964770+00:00"
+        "last_successful_watermark": "2026-07-26T14:59:37.033569+00:00"
     }
 }
