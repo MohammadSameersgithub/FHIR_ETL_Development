@@ -1,0 +1,12 @@
+2026-07-26 13:12:50 | INFO     | src.extractor.extract | extract:run:36 | Performing initial load for resource Patient from 2026-07-21
+2026-07-26 13:12:51 | INFO     | src.extractor.extract | extract:run:62 | Resource: Patient | Page: 1 | Records in page: 472 | Total records: 472 | File: C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00001.json
+2026-07-26 13:12:53 | INFO     | src.extractor.extract | extract:run:62 | Resource: Patient | Page: 2 | Records in page: 500 | Total records: 972 | File: C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00002.json
+2026-07-26 13:12:56 | INFO     | src.extractor.extract | extract:run:62 | Resource: Patient | Page: 3 | Records in page: 500 | Total records: 1472 | File: C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00003.json
+2026-07-26 13:12:56 | INFO     | src.extractor.extract | extract:run:62 | Resource: Patient | Page: 4 | Records in page: 10 | Total records: 1482 | File: C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00004.json
+2026-07-26 13:12:56 | INFO     | src.extractor.extract | extract:run:78 | Resource Patient extraction completed successfully. Total records: 1482
+2026-07-26 13:15:09 | INFO     | src.extractor.extract | extract:run:45 | Performing incremental load for resource Patient from 2026-07-26T07:42:50.047571+00:00
+2026-07-26 13:15:10 | INFO     | src.extractor.extract | extract:run:62 | Resource: Patient | Page: 5 | Records in page: 0 | Total records: 0 | File: C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00005.json
+2026-07-26 13:15:10 | INFO     | src.extractor.extract | extract:run:78 | Resource Patient extraction completed successfully. Total records: 0
+2026-07-26 13:15:27 | INFO     | src.extractor.extract | extract:run:45 | Performing incremental load for resource Patient from 2026-07-26T07:45:09.531109+00:00
+2026-07-26 13:15:28 | INFO     | src.extractor.extract | extract:run:62 | Resource: Patient | Page: 6 | Records in page: 0 | Total records: 0 | File: C:\Users\MohammadSameerUddin\FHIR_Pipeline\data\raw\Patient\2026-07-26\page_00006.json
+2026-07-26 13:15:28 | INFO     | src.extractor.extract | extract:run:78 | Resource Patient extraction completed successfully. Total records: 0
